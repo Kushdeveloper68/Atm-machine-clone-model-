@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Atm mechine</title>
+  <style type="text/css" media="all">
+   * {
+     margin:0;
+     padding:0;
+   } 
+   html, body {
+     width:100%;  
+     height:100%; 
+   }
+   input {
+     display:flex;
+     width:300px;
+     height:50px;
+     margin:10px auto;
+     border:1px solid black;
+     border-radius:10px;
+     padding:5px;
+     font-size:18px;
+   }
+   button {
+     width:150px;
+     height:40px;
+     display:flex;
+     justify-content:center;
+     align-items:center;
+     margin:10px auto;
+     margin:10px auto;
+     background:#25a9ff;
+     color:white;
+     font-size:17px;
+     border:none;
+     border-radius:10px;
+   }
+   button:hover {
+     background:#25ff5c;
+   }
+   h2 {
+     text-align:center;
+   }
+  #div-one {
+    display:block;
+  }
+  #div-two , #div-three , #div-four, #div-five  {
+    display:none;
+  }
+  .btn {
+    width:35px;
+    height:35px;
+    background:red;
+  }
+  </style>
+</head>
+<body>
+  <div id="div-one">
+    <!-- account create div -->
+    <h2>create your account</h2>
+    <input type="number" name="" id="phone-number" placeholder="phone number">
+    <input type="number" name="" id="new-pincode" value="" placeholder="new pin" min="6" max="6"/>
+    <button type="submit" id="create-btn">Create</button>
+  </div>
+  
+  <div id="div-two">
+    <!-- choice div -->
+    <button id="reverse-div-two" class="btn">~~</button>
+    <h2>choose one for do</h2>
+    <button id="deposit-btn">deposit</button>
+    <button id="widraw-btn">widraw</button>
+    <button id="blance-btn">Check blance</button>
+  </div>
+  
+  <div id="div-three">
+    <!-- deposit div work -->
+        <button id="reverse-div-three" class="btn">~~</button>
+  <h2>deposit</h2>
+    <input type="number" name="" id="deposit-rup-input" value="" placeholder="amount"/>
+    <input type="number" id="deposit-account-number" placeholder="phone number">
+    <input type="number" name="" id="deposit-pincode" value="" placeholder="pin"/>
+    <p id="deposit-rup-para"></p>
+    <button id="deposit-rup-btn">Deposit</button>
+  </div>
+  
+  <div id="div-four">
+        <button id="reverse-div-four" class="btn">~~</button>
+    <!-- widraw div -->
+    <h2>widraw</h2>
+    <input type="number" id="rup-widraw" placeholder="widraw amount">
+    <input type="number" id="widraw-account-number" placeholder="phone number">
+    <input type="number" name="" id="widraw-pincode" value=""  placeholder="pin"/>
+    <button id="widraw-rup-btn">widraw money</button>
+    <p id="widraw-para"></p>
+  </div>
+  
+  <div id="div-five">
+        <button id="reverse-div-five" class="btn">~~</button>
+    <!-- blance check -->
+    <h2>blance check</h2>
+    <input type="number" name="" id="blance-account-number" value="" placeholder="account number"/>
+    <input type="number" id="blance-pincode" placeholder="pin">
+   <button id="blance-rup-btn">Check</button>
+    <p id="blance-show-para"></p>
+  </div>
+  
+    <script src="./Atm.js"  type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
